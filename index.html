@@ -29,27 +29,46 @@
 
 
 
-<a href="https://instaforex.com/no_deposit_bonus?x=REGBS" target="_blank" style="outline: none"><img src="https://banners.ifxdb.com/i/img/banners/en/ndb_1000_300x50_en.jpg" width="300" height="50" alt="InstaForex" border="0" /></a>   
-   
+<a href="https://instaforex.com/no_deposit_bonus?x=maliek" target="_blank" style="outline: none"><img src="https://banners.ifxdb.com/i/img/banners/en/ndb_1000_300x50_en.jpg" width="300" height="50" alt="InstaForex" border="0" /></a>   
+<div>
+      <amp-script layout="fixed-height" height="36" script="user-agent-script" class="sample">
+        <div>
+          Your operating system is:
+          <span id="operating-system" class="answer-text"></span>
+        </div>
+      </amp-script>
+
+      <script id="user-agent-script" type="text/plain" target="amp-script">
+        // Adapted with gratitude from https://stackoverflow.com/a/38241481
+
+        function getOS() {
+          const userAgent = navigator.userAgent,
+                platform = navigator.platform,
+                macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+                windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+                iosPlatforms = ['iPhone', 'iPad', 'iPod'];
+
+          if (macosPlatforms.includes(platform)) {
+            return 'Mac OS';
+          } else if (iosPlatforms.includes(platform)) {
+            return 'iOS';
+          } else if (windowsPlatforms.includes(platform)) {
+            return 'Windows';
+          } else if (/Android/.test(userAgent)) {
+            return 'Android';
+          } else if (/Linux/.test(platform)) {
+            return 'Linux';
+          }
+
+          return 'Unknown';
+        }
+
+        const span = document.getElementById('operating-system');
+        span.textContent = getOS();
+      </script>
+</div> 
     
 
-<p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
-<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
-<h1>Changes to this Privacy Policy</h1>
-<p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
-<p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
-<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-<h1>Contact Us</h1>
-<p>If you have any questions about this Privacy Policy, You can contact us:</p>
-<ul>
-<li>By email: support@maliek.co.za</li>
-</ul>
-    
 
-
-
-      
-
-    
   </body>
 </html>
